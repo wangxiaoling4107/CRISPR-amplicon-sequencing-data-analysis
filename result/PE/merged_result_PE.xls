@@ -1,0 +1,3 @@
+Total_input	Total_aligned	Ref_aligned	Ref_unmodified	Ref_unmodified%	Ref_modified	Ref_modified%	PE_aligned	PE_unmodified	PE_unmodified%	PE_modified	PE_modified%	Scaffold_incorporated	Scaffold_incorporated%	Ambigous	Ambigous%	
+PE_gRNA_CD81_10_cd81N_94	63606	62321	53792	53450	85.8	342	0.1	6000	5963	9.6	37	0.1	250	0.4	2279	3.7
+PE_gRNA_CD81_9_cd81N_93	78888	77711	63984	63576	81.8	408	0.1	13706	13611	17.5	95	0.1	0	0	21	0

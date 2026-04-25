@@ -1,0 +1,3 @@
+Sample	Reads_input	Reads_aligned	total_reads	Indel	%Indel	Wildtype	%wildtype	Inside_desired	%Inside_desired	Inside_undesired	%Inside_undesired	Inside_desired_and_undesired	%Inside_desired_undesired	Inside_outside_desire	%Inside_outside_desire	Inside_outside_other	%Inside_outside_other	Outside_desire	%Outside_desire	Outside_other	%Outside_other
+ABE-max_gRNA_eGFP_32_doxY_87	99767	99762	99762	657	0.66	79175	79.36	17730	17.77	336	0.34	27	0.03	477	0.48	207	0.21	329	0.33	824	0.83
+CO-CBE_gRNA_eGFP_32_doxY_90	97160	97039	97039	1189	1.23	63249	65.18	14763	15.21	3314	3.42	276	0.28	10880	11.21	2074	2.14	661	0.68	633	0.65
