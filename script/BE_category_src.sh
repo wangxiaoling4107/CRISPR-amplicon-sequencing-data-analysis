@@ -5,7 +5,7 @@ if [ ! -d $script_dir ];then
         mkdir $script_dir
 fi
 
-sed '1d' sample.info|while read line
+sed '1d' sample.info.csv|while read line
 do
 	arr=($line)
 	condition=${arr[0]}
