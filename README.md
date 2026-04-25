@@ -1,4 +1,3 @@
-# CRISPR amplicon sequencing data analysis
 ## Overview
 This repository provides scripts for the analysis of base editing (BE) and prime editing (PE) sequencing data. FASTQ files are initially processed using CRISPResso2. For base editing applications, custom in-house scripts further process CRISPResso2 outputs, categorizing editing events to facilitate quantitative evaluation of editing efficiency and product purity.
 ## Workflow
