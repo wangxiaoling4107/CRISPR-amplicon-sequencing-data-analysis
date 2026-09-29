@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains scripts used to analyse amplicon sequencing data generated to evaluate the performance of advanced CRISPR tools, including base editors (BE) and prime editors (PE). 
+This repository contains scripts used to analyse amplicon sequencing data generated to evaluate gene editing outcomes of base editors (BE) and prime editors (PE). 
 
 FASTQ files are initially processed using CRISPResso2. Custom Python and shell scripts are then used to process CRISPResso2 outputs, classify editing outcomes, quantify editing efficiency and product purity, and generate visualizations.
 
