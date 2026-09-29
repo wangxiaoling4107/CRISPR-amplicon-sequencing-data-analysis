@@ -5,6 +5,7 @@ if [ ! -d $script_dir ];then
         mkdir $script_dir
 fi
 
+##Example format of sample.info.csv file see: meta/BE/sample.info.csv
 sed '1d' sample.info.csv|while read line
 do
 	arr=($line)
