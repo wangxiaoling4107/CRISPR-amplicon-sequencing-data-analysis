@@ -2,12 +2,13 @@
 
 ## Overview
 
-This repository contains scripts used to analyse amplicon sequencing data generated to evaluate CRISPR-based genome editing, including base editing (BE) and prime editing (PE). 
+This repository contains scripts used to analyse amplicon sequencing data generated to evaluate the performance of advanced CRISPR tools, including base editors (BE) and prime editors (PE). 
 
 FASTQ files are initially processed using CRISPResso2. Custom Python and shell scripts are then used to process CRISPResso2 outputs, classify editing outcomes, quantify editing efficiency and product purity, and generate visualizations.
 
 ## Workflow
 
+```text
 FASTQ
   ↓
 CRISPResso2
@@ -21,16 +22,19 @@ Editing outcome classification
 Quantification
   ↓
 Visualization
+```
 
 ## Repository structure
 
-data/      Input/example data (fastq)
-meta/      Metadata
+```text
+data/      Input example (fastq)
+meta/      Metadata example
 script/    Analysis scripts
 result/    Example results
+```
 
 ## Example Output
-See result folder
+See result/
 
 ## Requirements
 - Python 3.9+
@@ -41,16 +45,26 @@ See result folder
 - seaborn
 
 ## Instructions
+
 1. Prepare metadata (format see meta/)
 2. Process metadata, generate scripts for CRISPResso2 analysis and run them
-   e.g. crispresso2_BE_src.py -f info_BE.xlsx or crispresso2_PE_src.py -f info_PE.xlsx
-3. Generate scripts to process CRISPResso2 output for BE analysis and run to merge results
-   e.g. BE_category_src.sh
-4. Visualize BE results
-   e.g. histogram_BE.py -f info_BE.xlsx
-   e.g. heatmap_BE.py -f info_BE.xlsx
-5. Merge PE results
-   e.g. merge_PE_result.py -f info_PE.xlsx
+```text
+  crispresso2_BE_src.py -f info_BE.xlsx
+  crispresso2_PE_src.py -f info_PE.xlsx
+```
+4. Generate scripts to process CRISPResso2 output for BE analysis and run to merge results
+```text
+  BE_category_src.sh
+```
+5. Visualize BE results
+```text
+  histogram_BE.py -f info_BE.xlsx
+  heatmap_BE.py -f info_BE.xlsx
+```
+7. Merge PE results
+```text
+  merge_PE_result.py -f info_PE.xlsx
+```
 
 ## Reproducibility
 
@@ -64,7 +78,7 @@ DOI: [to be added]
 The scripts in this repository were used to generate
 the analyses presented in:
 
-[manuscript citation / title]
+*The chromatin context differently impacts prime editors and base editors and controls the fidelity and purity of base editing*
 
 ## Author
 Xiaoling Wang
