@@ -148,6 +148,66 @@ r_in_out_other=100*total_inside_outside_other/n_total
 r_out_des=100*total_outside_desire/n_total
 r_out_other=100*total_outside_other/n_total
 
-print("%s\t%d\t%d" %(sample,n_input,n_aligned),end='\t')  #mapping reads
-print("%d\t%d\t%4.2f\t%d\t%4.2f\t%d\t%4.2f\t%d\t%4.2f" %(n_total,total_indel,r_indel,total_wildtype,r_wt,total_inside_desire,r_in_des,total_inside_undesire,r_in_undes),end='\t') 
-print("%d\t%4.2f\t%d\t%4.2f\t%d\t%4.2f\t%d\t%4.2f\t%d\t%4.2f" %(total_inside_desire_undesire,r_in_des_undes,total_inside_outside_desire,r_in_out_des,total_inside_outside_other,r_in_out_other,total_outside_desire,r_out_des,total_outside_other,r_out_other))
+#header of output
+header = [
+    "Sample",
+    "Reads_input",
+    "Reads_aligned",
+    "total_reads",
+    "Indel",
+    "%Indel",
+    "Wildtype",
+    "%wildtype",
+    "Inside_desired",
+    "%Inside_desired",
+    "Inside_undesired",
+    "%Inside_undesired",
+    "Inside_desired_and_undesired",
+    "%Inside_desired_undesired",
+    "Inside_outside_desire",
+    "%Inside_outside_desire",
+    "Inside_outside_other",
+    "%Inside_outside_other",
+    "Outside_desire",
+    "%Outside_desire",
+    "Outside_other",
+    "%Outside_other",
+]
+
+##result
+result = [
+    sample,
+    n_input,
+    n_aligned,
+    n_total,
+    total_indel,
+    r_indel,
+    total_wildtype,
+    r_wt,
+    total_inside_desire,
+    r_in_des,
+    total_inside_undesire,
+    r_in_undes,
+    total_inside_desire_undesire,
+    r_in_des_undes,
+    total_inside_outside_desire,
+    r_in_out_des,
+    total_inside_outside_other,
+    r_in_out_other,
+    total_outside_desire,
+    r_out_des,
+    total_outside_other,
+    r_out_other,
+]
+
+df_result = pd.DataFrame([result], columns=header)
+
+output_dir = "result"
+os.makedirs(output_dir, exist_ok=True)
+
+output_file = os.path.join(
+    output_dir,
+    f"{sample}_base_editing_results.csv"
+)
+
+df_result.to_csv(output_file, index=False, float_format="%.2f")
