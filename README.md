@@ -80,5 +80,23 @@ the analyses presented in:
 
 *The chromatin context differently impacts prime editors and base editors and controls the fidelity and purity of base editing*
 
-## Author
-Xiaoling Wang
+## Relationship to manuscript figures
+
+The scripts in this repository were used to process and quantify
+amplicon sequencing data underlying the manuscript figures.
+Some quantitative results were subsequently visualized using GraphPad Prism.
+
+### Base editing
+
+| Manuscript figure(s) | Script | Description |
+|---|---|---|
+| Figure 6B, 6C, Figure S14, S17, S18C | `script/BE_category.py` | Classification and quantification of base-editing outcomes. The resulting data were subsequently visualized using GraphPad Prism. |
+| Figure 7 | `script/heatmap_BE.py` | Generation of the base-editing sequencing result heatmap. |
+
+### Prime editing
+
+| Manuscript figure(s) | Script | Description |
+|---|---|---|
+| Figure 4F, Figure S7B, S8B–C, S9B–C, S10C | `script/crispresso2_PE_src.py` and `script/merge_PE_result.py` | Processing and merging of prime-editing amplicon sequencing results. The resulting data were subsequently visualized using GraphPad Prism. |
+
+
