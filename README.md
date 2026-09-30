@@ -19,7 +19,7 @@ Custom analysis scripts
   ↓
 Editing outcome classification
   ↓
-Quantification
+Quantification and merge results
   ↓
 Visualization
 ```
