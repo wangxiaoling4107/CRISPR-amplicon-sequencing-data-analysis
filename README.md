@@ -38,7 +38,7 @@ See result/
 
 ## Requirements
 - Python 3.9+
-- CRISPResso2
+- CRISPResso2 v2.1+
 - pandas
 - numpy
 - matplotlib
