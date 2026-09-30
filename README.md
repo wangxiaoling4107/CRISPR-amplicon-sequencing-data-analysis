@@ -52,9 +52,9 @@ See result/
   crispresso2_BE_src.py -f info_BE.xlsx
   crispresso2_PE_src.py -f info_PE.xlsx
 ```
-3. Generate scripts to process CRISPResso2 output for BE analysis and run to merge results
+3. Generate scripts to process CRISPResso2 output for BE analysis, run and merge results
 ```text
-  BE_category_src.sh
+  BE_category_src.sh sample.info.csv
 ```
 4. Visualize BE results
 ```text
