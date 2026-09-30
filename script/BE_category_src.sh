@@ -6,7 +6,14 @@ if [ ! -d $script_dir ];then
 fi
 
 ##Example format of sample.info.csv file see: meta/BE/sample.info.csv
-sed '1d' sample.info.csv|while read line
+##sample.info.csv has the same content as the first sheet of meta/BE/info_BE.xlsx
+sample_info="$1"
+if [ ! -f "$sample_info" ]; then
+    echo "Error: sample info file not found: $sample_info"
+    exit 1
+fi
+
+sed '1d' "$sample_info"|while read line
 do
 	arr=($line)
 	condition=${arr[0]}
