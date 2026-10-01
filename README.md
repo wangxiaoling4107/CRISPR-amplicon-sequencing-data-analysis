@@ -92,7 +92,7 @@ GraphPad Prism.
 | Manuscript figure(s) | Script | Description |
 |---|---|---|
 | Figure 6B, 6C, Figure S14, S17, S18C | `script/BE_category.py` | Classification and quantification of base-editing outcomes. The resulting data were subsequently visualized using GraphPad Prism. |
-| Figure 7 | `histogram_BE.py` | Generation of the base-editing sequencing result histogram. |
+| Figure 7 | `script/histogram_BE.py` | Generation of the base-editing sequencing result histogram. |
 
 ### Prime editing
 
