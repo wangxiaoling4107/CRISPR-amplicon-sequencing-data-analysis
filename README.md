@@ -66,13 +66,6 @@ See result/
   merge_PE_result.py -f info_PE.xlsx
 ```
 
-## Reproducibility
-
-The version of this repository corresponding to the
-manuscript is archived at Zenodo:
-
-DOI: [to be added]
-
 ## Manuscript
 
 The scripts in this repository were used to generate
